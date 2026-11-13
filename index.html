@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelance Hourly Rate & Project Price Calculator (2026)</title>
+  <meta name="description" content="Calculate your exact freelance hourly rate and project quote in seconds. Factor in expenses, taxes, billable hours, and desired annual income.">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "How do I calculate my freelance hourly rate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Add your desired annual net income and business expenses, divide by (1 minus your tax rate) to find your gross income target, and divide that number by your total annual billable hours."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How many billable hours does a freelancer work per week?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most full-time freelancers bill between 20 and 30 hours per week. The remaining 10 to 20 hours go toward unpaid tasks like client emails, marketing, invoicing, and admin work."
+      }
+    }]
+  }
+  </script>
+</head>
+<body>
+  <main class="container">
+    <nav class="top-nav">
+      <a href="index.html" class="active">General Calculator</a>
+      <a href="rate_calculator.html">Web Developers</a>
+      <a href="grapgic_designer.html">Graphic Designers</a>
+      <a href="video_editor.html">Video Editors</a>
+    </nav>
+
+    <header>
+      <h1>Freelance Hourly Rate Calculator</h1>
+      <p>Find out exactly what you need to charge per hour and per project to hit your annual income goals.</p>
+    </header>
+
+    <section class="calculator-card">
+      <div class="input-group">
+        <label for="goal">Desired Annual Net Income ($)</label>
+        <input type="number" id="goal" value="50000" min="1000">
+      </div>
+      <div class="input-group">
+        <label for="expenses">Annual Business Expenses ($)</label>
+        <input type="number" id="expenses" value="5000" min="0">
+      </div>
+      <div class="input-group">
+        <label for="tax">Estimated Tax Rate (%)</label>
+        <input type="number" id="tax" value="25" min="0" max="80">
+      </div>
+      <div class="input-group">
+        <label for="hours">Billable Hours Per Week</label>
+        <input type="number" id="hours" value="25" min="1" max="80">
+      </div>
+      <div class="input-group">
+        <label for="weeks">Working Weeks Per Year</label>
+        <input type="number" id="weeks" value="48" min="1" max="52">
+      </div>
+
+      <div class="results-box">
+        <h2>Your Recommended Rates</h2>
+        <div class="result-item">
+          <span>Minimum Hourly Rate:</span>
+          <strong id="hourly-result">$0.00</strong>
+        </div>
+        <div class="result-item">
+          <span>Day Rate (8 hrs):</span>
+          <strong id="daily-result">$0.00</strong>
+        </div>
+        <div class="result-item">
+          <span>2-Week Project Quote:</span>
+          <strong id="project-result">$0.00</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="seo-content">
+      <h2>How to Calculate Your Freelance Hourly Rate</h2>
+      <p>Setting your freelance rate by simply dividing a full-time salary by 2,080 hours is one of the fastest ways to undercharge. Unlike salaried employees, freelancers pay self-employment taxes, buy their own equipment, and spend roughly 30% to 40% of their week on unpaid administrative work.</p>
+
+      <h3>The Freelance Pricing Formula</h3>
+      <ul>
+        <li><strong>Step 1 (Gross Target):</strong> Add your desired take-home pay and annual expenses, then adjust upward to cover income taxes.</li>
+        <li><strong>Step 2 (Billable Capacity):</strong> Multiply realistic billable hours per week (usually 25 hours) by working weeks per year (usually 48 weeks).</li>
+        <li><strong>Step 3 (Base Rate):</strong> Divide your Gross Target by your total annual billable hours to find your break-even minimum rate.</li>
+      </ul>
+
+      <h2>Average Freelance Hourly Rates by Industry (2026)</h2>
+      <table class="rate-table">
+        <thead>
+          <tr>
+            <th>Freelance Niche</th>
+            <th>Beginner</th>
+            <th>Intermediate</th>
+            <th>Expert</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Web & Software Development</td>
+            <td>$25 – $45/hr</td>
+            <td>$50 – $95/hr</td>
+            <td>$100 – $180+/hr</td>
+          </tr>
+          <tr>
+            <td>Graphic & UI/UX Design</td>
+            <td>$20 – $40/hr</td>
+            <td>$45 – $85/hr</td>
+            <td>$90 – $150+/hr</td>
+          </tr>
+          <tr>
+            <td>Video Editing & Motion Graphics</td>
+            <td>$20 – $40/hr</td>
+            <td>$45 – $80/hr</td>
+            <td>$85 – $150+/hr</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>Should I charge hourly or per project?</h3>
+      <p>Use your hourly rate internally to estimate how much time a project requires, then quote the client a flat project fee. Flat project pricing rewards efficiency and gives clients predictable budgets.</p>
+
+      <h3>What expenses should I include?</h3>
+      <p>Include laptop replacement costs, internet bills, software subscriptions, accounting tools, coworking fees, health insurance, and marketing costs.</p>
+    </article>
+
+    <footer>
+      <p>&copy; 2026 Freelance Rate Calculator. Free financial planning tool for independent workers.</p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

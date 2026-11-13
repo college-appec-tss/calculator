@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #222;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #dce3e6;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #0055aa;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #e9f2fc;
+}
+
+.top-nav a.active, .top-nav a:hover {
+  background: #0055aa;
+  color: #ffffff;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  font-size: 1.85rem;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.calculator-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.results-box {
+  margin-top: 24px;
+  padding: 20px;
+  background-color: #eef6ff;
+  border-radius: 8px;
+  border-left: 4px solid #0066cc;
+}
+
+.results-box h2 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #004499;
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #d6e6f7;
+  font-size: 1.05rem;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.seo-content {
+  background: #fff;
+  padding: 26px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.seo-content h2 {
+  font-size: 1.35rem;
+  margin-top: 26px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.seo-content h2:first-child {
+  margin-top: 0;
+}
+
+.seo-content h3 {
+  font-size: 1.1rem;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.seo-content p, .seo-content ul {
+  margin-bottom: 14px;
+  color: #444;
+}
+
+.seo-content ul {
+  padding-left: 20px;
+}
+
+.seo-content li {
+  margin-bottom: 6px;
+}
+
+.rate-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px 0;
+  font-size: 0.95rem;
+}
+
+.rate-table th, .rate-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.rate-table th {
+  background-color: #f0f4f8;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: #666;
+}

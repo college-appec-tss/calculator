@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelance Web Developer Hourly Rate Calculator (2026)</title>
+  <meta name="description" content="Calculate your freelance web developer hourly rate and website project quote. Pre-configured for frontend, backend, and full-stack developers.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <nav class="top-nav">
+      <a href="index.html">General Calculator</a>
+      <a href="rate_calculator.html" class="active">Web Developers</a>
+      <a href="grapgic_designer.html">Graphic Designers</a>
+      <a href="video_editor.html">Video Editors</a>
+    </nav>
+
+    <header>
+      <h1>Web Developer Rate Calculator</h1>
+      <p>Calculate your freelance software engineering or web development rate based on your income targets and tech stack expenses.</p>
+    </header>
+
+    <section class="calculator-card">
+      <div class="input-group">
+        <label for="goal">Desired Annual Net Income ($)</label>
+        <input type="number" id="goal" value="75000" min="1000">
+      </div>
+      <div class="input-group">
+        <label for="expenses">Annual Tech & Hosting Expenses ($)</label>
+        <input type="number" id="expenses" value="4000" min="0">
+      </div>
+      <div class="input-group">
+        <label for="tax">Estimated Tax Rate (%)</label>
+        <input type="number" id="tax" value="25" min="0" max="80">
+      </div>
+      <div class="input-group">
+        <label for="hours">Billable Coding Hours Per Week</label>
+        <input type="number" id="hours" value="28" min="1" max="80">
+      </div>
+      <div class="input-group">
+        <label for="weeks">Working Weeks Per Year</label>
+        <input type="number" id="weeks" value="48" min="1" max="52">
+      </div>
+
+      <div class="results-box">
+        <h2>Your Developer Rates</h2>
+        <div class="result-item">
+          <span>Minimum Hourly Rate:</span>
+          <strong id="hourly-result">$0.00</strong>
+        </div>
+        <div class="result-item">
+          <span>Day Rate (8 hrs):</span>
+          <strong id="daily-result">$0.00</strong>
+        </div>
+        <div class="result-item">
+          <span>2-Week Sprint Quote:</span>
+          <strong id="project-result">$0.00</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="seo-content">
+      <h2>How Much Should Freelance Web Developers Charge?</h2>
+      <p>Freelance web developers frequently underprice websites because they forget to include time spent on code debugging, client revisions, server deployment, and security updates. Even if you write clean HTML, CSS, JavaScript, or Java code quickly, non-coding tasks usually consume 30% of your week.</p>
+
+      <h3>Average Developer Rates by Specialty (2026)</h3>
+      <table class="rate-table">
+        <thead>
+          <tr>
+            <th>Developer Role</th>
+            <th>Junior</th>
+            <th>Mid-Level</th>
+            <th>Senior</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Frontend (HTML/CSS/React)</td>
+            <td>$30 – $50/hr</td>
+            <td>$55 – $90/hr</td>
+            <td>$95 – $150/hr</td>
+          </tr>
+          <tr>
+            <td>Backend (Node.js / Java / Python)</td>
+            <td>$35 – $55/hr</td>
+            <td>$65 – $110/hr</td>
+            <td>$115 – $180/hr</td>
+          </tr>
+          <tr>
+            <td>WordPress & Shopify Specialist</td>
+            <td>$25 – $45/hr</td>
+            <td>$50 – $80/hr</td>
+            <td>$85 – $130/hr</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Common Developer Business Expenses</h3>
+      <ul>
+        <li><strong>Cloud & Hosting:</strong> AWS, Vercel, DigitalOcean test servers, and domain names.</li>
+        <li><strong>Software & AI Tools:</strong> IDE licenses, GitHub Copilot, Figma, and API subscriptions.</li>
+        <li><strong>Hardware:</strong> High-RAM laptops, external monitors, and backup drives.</li>
+      </ul>
+    </article>
+
+    <footer>
+      <p>&copy; 2026 Freelance Rate Calculator. Built for independent developers.</p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

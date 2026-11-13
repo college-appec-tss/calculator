@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelance Graphic Designer Hourly Rate Calculator (2026)</title>
+  <meta name="description" content="Calculate your freelance graphic design or UI/UX hourly rate. Factor in Creative Cloud subscriptions, revisions, taxes, and annual income goals.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <nav class="top-nav">
+      <a href="index.html">General Calculator</a>
+      <a href="rate_calculator.html">Web Developers</a>
+      <a href="grapgic_designer.html" class="active">Graphic Designers</a>
+      <a href="video_editor.html">Video Editors</a>
+    </nav>
+
+    <header>
+      <h1>Graphic Designer Rate Calculator</h1>
+      <p>Find your sustainable hourly and project pricing for branding, logo design, and UI/UX work.</p>
+    </header>
+
+    <section class="calculator-card">
+      <div class="input-group">
+        <label for="goal">Desired Annual Net Income ($)</label>
+        <input type="number" id="goal" value="55000" min="1000">
+      </div>
+      <div class="input-group">
+        <label for="expenses">Annual Software & Asset Expenses ($)</label>
+        <input type="number" id="expenses" value="3500" min="0">
+      </div>
+      <div class="input-group">
+        <label for="tax">Estimated Tax Rate (%)</label>
+        <input type="number" id="tax" value="25" min="0" max="80">
+      </div>
+      <div class="input-group">
+        <label for="hours">Billable Design Hours Per Week</label>
+        <input type="number" id="hours" value="25" min="1" max="80">
+      </div>
+      <div class="input-group">
+        <label for="weeks">Working Weeks Per Year</label>
+        <input type="number" id="weeks" value="48" min="1" max="52">
+      </div>
+
+      <div class="results-box">
+        <h2>Your Design Rates</h2>
+        <div class="result-item">
+          <span>Minimum Hourly Rate:</span>
+          <strong id="hourly-result">$0.00</strong>
+        </div>
+        <div class="result-item">
+          <span>Day Rate (8 hrs):</span>
+          <strong id="daily-result">$0.00</strong>
+        </div>
+        <div class="result-item">
+          <span>2-Week Design Package:</span>
+          <strong id="project-result">$0.00</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="seo-content">
+      <h2>Pricing Tips for Freelance Graphic Designers</h2>
+      <p>Creative work involves heavy upfront thinking, mood-boarding, and client feedback rounds. If you charge strictly by the hour, getting faster at Adobe Illustrator or Figma actually lowers your income. Use this calculator to find your baseline hourly cost, then quote flat package prices with a strict limit of two revision rounds.</p>
+
+      <h3>Average Graphic Design Rates (2026)</h3>
+      <table class="rate-table">
+        <thead>
+          <tr>
+            <th>Design Specialty</th>
+            <th>Beginner</th>
+            <th>Intermediate</th>
+            <th>Expert</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Brand Identity & Logo Design</td>
+            <td>$25 – $45/hr</td>
+            <td>$50 – $85/hr</td>
+            <td>$90 – $150/hr</td>
+          </tr>
+          <tr>
+            <td>UI/UX & Product Design</td>
+            <td>$30 – $50/hr</td>
+            <td>$60 – $100/hr</td>
+            <td>$105 – $165/hr</td>
+          </tr>
+          <tr>
+            <td>Social Media & Marketing Assets</td>
+            <td>$20 – $35/hr</td>
+            <td>$40 – $65/hr</td>
+            <td>$70 – $110/hr</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <footer>
+      <p>&copy; 2026 Freelance Rate Calculator. Built for independent designers.</p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelance Video Editor Hourly & Day Rate Calculator (2026)</title>
+  <meta name="description" content="Calculate your freelance video editing hourly rate, day rate, and YouTube retainer pricing. Account for storage drives, software, and rendering time.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <nav class="top-nav">
+      <a href="index.html">General Calculator</a>
+      <a href="rate_calculator.html">Web Developers</a>
+      <a href="grapgic_designer.html">Graphic Designers</a>
+      <a href="video_editor.html" class="active">Video Editors</a>
+    </nav>
+
+    <header>
+      <h1>Video Editor Rate Calculator</h1>
+      <p>Calculate your hourly rate, day rate, and monthly creator retainer pricing for video editing and motion graphics.</p>
+    </header>
+
+    <section class="calculator-card">
+      <div class="input-group">
+        <label for="goal">Desired Annual Net Income ($)</label>
+        <input type="number" id="goal" value="50000" min="1000">
+      </div>
+      <div class="input-group">
+        <label for="expenses">Annual Gear, Storage & Stock Expenses ($)</label>
+        <input type="number" id="expenses" value="4500" min="0">
+      </div>
+      <div class="input-group">
+        <label for="tax">Estimated Tax Rate (%)</label>
+        <input type="number" id="tax" value="25" min="0" max="80">
+      </div>
+      <div class="input-group">
+        <label for="hours">Billable Editing Hours Per Week</label>
+        <input type="number" id="hours" value="26" min="1" max="80">
+      </div>
+      <div class="input-group">
+        <label for="weeks">Working Weeks Per Year</label>
+        <input type="number" id="weeks" value="48" min="1" max="52">
+      </div>
+
+      <div class="results-box">
+        <h2>Your Video Editing Rates</h2>
+        <div class="result-item">
+          <span>Minimum Hourly Rate:</span>
+          <strong id="hourly-result">$0.00</strong>
+        </div>
+        <div class="result-item">
+          <span>Full Day Rate (8 hrs):</span>
+          <strong id="daily-result">$0.00</strong>
+        </div>
+        <div class="result-item">
+          <span>2-Week Retainer Quote:</span>
+          <strong id="project-result">$0.00</strong>
+        </div>
+      </div>
+    </section>
+
+    <article class="seo-content">
+      <h2>How Video Editors Should Price Their Work</h2>
+      <p>Video editing requires expensive hardware, fast NVMe SSD storage, cloud transfer plans, and stock audio/video licenses. Always factor file downloading, proxy generation, and export rendering times into your total project hours so you are not working for free while your computer processes 4K footage.</p>
+
+      <h3>Average Video Editing Rates (2026)</h3>
+      <table class="rate-table">
+        <thead>
+          <tr>
+            <th>Editing Niche</th>
+            <th>Beginner</th>
+            <th>Intermediate</th>
+            <th>Expert</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>YouTube & Short-Form Content</td>
+            <td>$20 – $35/hr</td>
+            <td>$40 – $70/hr</td>
+            <td>$75 – $125/hr</td>
+          </tr>
+          <tr>
+            <td>Commercial & Corporate Video</td>
+            <td>$30 – $50/hr</td>
+            <td>$55 – $90/hr</td>
+            <td>$95 – $160/hr</td>
+          </tr>
+          <tr>
+            <td>2D/3D Motion Graphics</td>
+            <td>$35 – $55/hr</td>
+            <td>$65 – $105/hr</td>
+            <td>$110 – $180/hr</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <footer>
+      <p>&copy; 2026 Freelance Rate Calculator. Built for independent video editors.</p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
