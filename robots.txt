@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://yourdomain.com
+Sitemap: https://college-appec-tss.github.io/calculator/
